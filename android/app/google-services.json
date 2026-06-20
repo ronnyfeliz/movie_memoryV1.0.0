@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "508549325871",
+    "project_id": "moviememory-b135e",
+    "storage_bucket": "moviememory-b135e.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:508549325871:android:9cabb937b84f215e3c12da",
+        "android_client_info": {
+          "package_name": "com.innovatech.movie_memory"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "508549325871-5514ios96hl0bhies6tpotmf03cpq7mh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyACiorR-oE8ihper0wT1AEft83P1dAAeKk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "508549325871-5514ios96hl0bhies6tpotmf03cpq7mh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,75 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // Users profile rules: any authenticated user can view profile summaries (name, photo)
+    match /users/{userId} {
+      allow read: if request.auth != null;
+      allow write: if request.auth != null && request.auth.uid == userId;
+    }
+
+    // Library collections rules: private watchlist items
+    match /users/{userId}/library/{itemId} {
+      allow read, write: if request.auth != null && request.auth.uid == userId;
+    }
+
+    // Watch history rules: private watch logs
+    match /users/{userId}/watch_history/{docId} {
+      allow read, write: if request.auth != null && request.auth.uid == userId;
+    }
+
+    // Custom lists rules: public lists are readable by all; only owner can modify, except for likes/follows
+    match /users/{userId}/customLists/{listId} {
+      allow read: if request.auth != null && (userId == request.auth.uid || resource.data.isPublic == true);
+      allow create: if request.auth != null && userId == request.auth.uid;
+      allow delete: if request.auth != null && userId == request.auth.uid;
+      allow update: if request.auth != null && (
+        userId == request.auth.uid || (
+          resource.data.isPublic == true &&
+          request.resource.data.diff(resource.data).affectedKeys().hasOnly(['likedBy', 'likeCount', 'followedBy'])
+        )
+      );
+    }
+
+    // Custom list comments rules: readable if authenticated; writeable/editable only by author, except likes
+    match /users/{userId}/listComments/{listId}/messages/{messageId} {
+      allow read: if request.auth != null;
+      allow create: if request.auth != null && request.resource.data.userId == request.auth.uid;
+      allow delete: if request.auth != null && resource.data.userId == request.auth.uid;
+      allow update: if request.auth != null && (
+        resource.data.userId == request.auth.uid ||
+        request.resource.data.diff(resource.data).affectedKeys().hasOnly(['likes'])
+      );
+    }
+
+    // Global movie/series comments rules: public read; writeable/editable only by author, except likes
+    match /comments/{tmdbId}/messages/{messageId} {
+      allow read: if true;
+      allow create: if request.auth != null
+        && request.resource.data.userId == request.auth.uid
+        && request.resource.data.text.size() > 0;
+      allow delete: if request.auth != null
+        && resource.data.userId == request.auth.uid;
+      allow update: if request.auth != null && (
+        resource.data.userId == request.auth.uid ||
+        request.resource.data.diff(resource.data).affectedKeys().hasOnly(['likes'])
+      );
+    }
+
+    // Notifications rules
+    match /users/{userId}/notifications/{notificationId} {
+      allow read, update, delete: if request.auth != null && request.auth.uid == userId;
+      allow create: if request.auth != null;
+    }
+
+    // Daily recommendations rules
+    match /dailyRecommendations/{docId} {
+      allow read: if request.auth != null;
+    }
+
+    // Default: deny all other paths
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}

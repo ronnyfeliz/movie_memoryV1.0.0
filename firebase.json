@@ -1,0 +1,24 @@
+{
+  "flutter": {
+    "platforms": {
+      "android": {
+        "default": {
+          "projectId": "moviememory-b135e",
+          "appId": "1:508549325871:android:9cabb937b84f215e3c12da",
+          "fileOutput": "android/app/google-services.json"
+        }
+      },
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "moviememory-b135e",
+          "configurations": {
+            "android": "1:508549325871:android:9cabb937b84f215e3c12da"
+          }
+        }
+      }
+    }
+  },
+  "firestore": {
+    "indexes": "firestore.indexes.json"
+  }
+}
