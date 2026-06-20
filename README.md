@@ -1,4 +1,4 @@
-# 🎬 MovieMemory
+# ?? MovieMemory
 
 <div align="center">
 
@@ -15,7 +15,7 @@ Discover, organize, and enjoy your favorite content in one place.
 
 ---
 
-## 📖 Overview
+## ?? Overview
 
 MovieMemory is a multimedia platform developed with **Flutter** and **Firebase** that allows users to discover, organize, manage, and explore movies and TV series through a modern and intuitive interface.
 
@@ -23,9 +23,9 @@ Originally conceived as a personal media library, the project evolved into a com
 
 ---
 
-## ✨ Features
+## ? Features
 
-### 🎥 Content Discovery
+### ?? Content Discovery
 
 - Browse popular movies and TV shows
 - Explore trending content
@@ -35,14 +35,14 @@ Originally conceived as a personal media library, the project evolved into a com
 - Cast and production details
 - Official trailers and media assets
 
-### 📚 Personal Library
+### ?? Personal Library
 
 - Add content to favorites
 - Track watch history
 - Manage viewing status
 - Organize content efficiently
 
-### 📝 Custom Lists
+### ?? Custom Lists
 
 - Create unlimited custom lists
 - Public and private list support
@@ -50,14 +50,14 @@ Originally conceived as a personal media library, the project evolved into a com
 - Follow public lists from the community
 - Discover new content through shared collections
 
-### 🌍 Multilingual Support
+### ?? Multilingual Support
 
 - English support
 - Spanish support
 - Language-aware content caching
 - Dynamic language switching
 
-### ▶️ Multimedia Playback
+### ?? Multimedia Playback
 
 - Integrated video playback
 - Multiple content providers
@@ -65,7 +65,7 @@ Originally conceived as a personal media library, the project evolved into a com
 - Streaming optimization
 - Subtitle support (when available)
 
-### ☁️ Cloud Integration
+### ?? Cloud Integration
 
 - Firebase Authentication
 - Cloud Firestore database
@@ -75,32 +75,32 @@ Originally conceived as a personal media library, the project evolved into a com
 
 ---
 
-## 🏗️ Architecture
+## ??? Architecture
 
 MovieMemory follows a modular and scalable architecture designed to support future expansion and maintainability.
 
 ### Main Modules
 
 ```text
-📦 MovieMemory
-├── Authentication
-├── Home
-├── Discover
-├── Search
-├── Details
-├── Favorites
-├── Watch History
-├── Custom Lists
-├── Public Lists
-├── Streaming
-├── User Profile
-├── Settings
-└── Localization
+?? MovieMemory
++-- Authentication
++-- Home
++-- Discover
++-- Search
++-- Details
++-- Favorites
++-- Watch History
++-- Custom Lists
++-- Public Lists
++-- Streaming
++-- User Profile
++-- Settings
++-- Localization
 ```
 
 ---
 
-## 🛠️ Tech Stack
+## ??? Tech Stack
 
 ### Frontend
 
@@ -134,9 +134,28 @@ MovieMemory follows a modular and scalable architecture designed to support futu
 
 ---
 
-## 📱 Screenshots
+## ?? Screenshots
 
-> Add screenshots of your application here.
+> <img width="1080" height="2400" alt="Screenshot_2026-06-17-12-29-57-337_com innovatech movie_memory" src="https://github.com/user-attachments/assets/d30bda2c-9209-437a-b9d9-879ec73d5333" />
+
+<img width="1080" height="2400" alt="Screenshot_2026-06-17-12-33-07-353_com innovatech movie_memory" src="https://github.com/user-attachments/assets/e2089a85-a53a-49e1-a8a0-660009777ba3" />
+
+<img width="2400" height="1080" alt="Screenshot_2026-06-17-12-34-36-839_com innovatech movie_memory" src="https://github.com/user-attachments/assets/89fc463b-4107-495f-bb00-a8dfc299ec5b" />
+<img width="1080" height="2400" alt="Screenshot_2026-06-17-12-33-39-535_com innovatech movie_memory" src="https://github.com/user-attachments/assets/ef76de87-f954-46c7-9cc5-b4df5b5ab446" />
+
+<img width="1080" height="2400" alt="Screenshot_2026-06-17-12-33-36-767_com innovatech movie_memory" src="https://github.com/user-attachments/assets/1640b539-63f8-4bcf-b051-bb4cab38f8ac" />
+
+
+<img width="1080" height="2400" alt="Screenshot_2026-06-17-12-30-10-764_com innovatech movie_memory" src="https://github.com/user-attachments/assets/d6944f48-c8d2-47ae-b3e5-383c7686e455" />
+
+<img width="1080" height="2400" alt="Screenshot_2026-06-17-12-31-10-474_com innovatech movie_memory" src="https://github.com/user-attachments/assets/00f104eb-ee65-40f3-abef-faac5666d292" />
+
+<img width="1080" height="2400" alt="Screenshot_2026-06-17-12-31-47-249_com innovatech movie_memory" src="https://github.com/user-attachments/assets/05777db9-26c9-4bb6-834f-faf90e9ba6ab" />
+<img width="1080" height="2400" alt="Screenshot_2026-06-17-12-30-23-667_com innovatech movie_memory" src="https://github.com/user-attachments/assets/8d6aef7b-5d9d-430d-bb6e-5b9c67212577" />
+
+
+<img width="1080" height="2400" alt="Screenshot_2026-06-17-12-30-16-476_com innovatech movie_memory" src="https://github.com/user-attachments/assets/b9aaaf9f-95b9-44ed-a15f-db31c44c2997" />
+
 
 | Home | Discover | Details |
 |--------|--------|--------|
@@ -144,7 +163,7 @@ MovieMemory follows a modular and scalable architecture designed to support futu
 
 ---
 
-## 🚀 Installation
+## ?? Installation
 
 ### Prerequisites
 
@@ -176,7 +195,7 @@ flutter run
 
 ---
 
-## ⚙️ Configuration
+## ?? Configuration
 
 ### Firebase
 
@@ -198,35 +217,35 @@ TMDB_API_KEY=YOUR_API_KEY
 
 ---
 
-## 🎯 Current Features
+## ?? Current Features
 
-✅ Movie Discovery
+? Movie Discovery
 
-✅ TV Show Discovery
+? TV Show Discovery
 
-✅ Favorites Management
+? Favorites Management
 
-✅ Watch History
+? Watch History
 
-✅ Public Lists
+? Public Lists
 
-✅ Custom Lists
+? Custom Lists
 
-✅ List Following
+? List Following
 
-✅ Streaming Integration
+? Streaming Integration
 
-✅ Multilingual Support
+? Multilingual Support
 
-✅ Firebase Authentication
+? Firebase Authentication
 
-✅ Cloud Firestore Integration
+? Cloud Firestore Integration
 
-✅ Intelligent Caching
+? Intelligent Caching
 
 ---
 
-## 🔮 Future Roadmap
+## ?? Future Roadmap
 
 ### Social Features
 
@@ -258,7 +277,7 @@ TMDB_API_KEY=YOUR_API_KEY
 
 ---
 
-## 🌐 Official Website
+## ?? Official Website
 
 **MovieMemory Official Website**
 
@@ -266,7 +285,7 @@ https://medfamily-app.netlify.app/
 
 ---
 
-## 👨‍💻 Developer
+## ????? Developer
 
 **Ronny Feliz**
 
@@ -274,13 +293,13 @@ Technology enthusiast focused on software development, multimedia systems, and d
 
 ### Connect with me
 
-- LinkedIn: Add your profile
-- GitHub: Add your profile
-- Portfolio: Add your portfolio
+- LinkedIn: https://www.linkedin.com/in/ronnyfeliz2/
+- GitHub: https://github.com/ronnyfeliz
+- Portfolio: https://ronnyfeliz.github.io/
 
 ---
 
-## 📄 License
+## ?? License
 
 This project was developed for educational, learning, and portfolio purposes.
 
@@ -288,10 +307,10 @@ This project was developed for educational, learning, and portfolio purposes.
 
 <div align="center">
 
-### 🎬 MovieMemory
+### ?? MovieMemory
 
 **Discover • Organize • Enjoy**
 
-Built with ❤️ using Flutter & Firebase
+Built with ?? using Flutter & Firebase
 
 </div>
